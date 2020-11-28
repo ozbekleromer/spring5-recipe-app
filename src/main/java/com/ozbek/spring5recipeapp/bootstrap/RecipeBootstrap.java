@@ -6,6 +6,7 @@ import com.ozbek.spring5recipeapp.repositories.RecipeRepository;
 import com.ozbek.spring5recipeapp.repositories.UnitOfMeasureRepository;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.Optional;
 /**
  * created by ozbek on 2020-11-28
  */
+@Component
 public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
     private final CategoryRepository categoryRepository;
